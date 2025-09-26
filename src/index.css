@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --default-font-family: "Montserrat", sans-serif;
+  --color-primary: #f5f5f5;
+  --color-secondary: #5E463A;
+  --color-teritory: #372821;
+  --color-dark: #171614;
+  --color-text-dark: #F2F2F2;
+
+
+  /* Font Sizes - max 3.25rem (52px) */
+  --text-heading-xl: 3.25rem;
+  /* 52px - Largest (H1) */
+  --text-heading-lg: 2.75rem;
+  /* 44px - H2 */
+  --text-heading-md: 2.25rem;
+  /* 36px - H3 */
+  --text-heading-sm: 1.75rem;
+  /* 28px - H4 */
+  --text-heading-xs: 1.5rem;
+  /* 24px - H5 */
+
+  --text-body-lg: 1.25rem;
+  /* 20px */
+  --text-body: 1.125rem;
+  /* 18px */
+  --text-body-sm: 1rem;
+  /* 16px */
+  --text-caption: 0.875rem;
+  /* 14px */
+}
+
+
+/* slider code started here  */
+
+.slider-inner .slick-slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider-inner .slick-slider .slick-list {
+  width: 100%;
+}
+
+.slider-inner .slick-slider .slick-list .slick-track div {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
