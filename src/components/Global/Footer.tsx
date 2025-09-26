@@ -1,4 +1,4 @@
-import logo from "/src/assets/Logo.svg";
+import logo from "/src/assets/logo.svg";
 
 
 const navLinks = [
