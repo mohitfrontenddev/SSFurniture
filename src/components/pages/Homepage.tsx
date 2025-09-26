@@ -1,4 +1,3 @@
-import ReactLenis from "lenis/react";
 import { Header } from "../Global/Header";
 import { Banner } from "../Banner";
 import { Collections } from "../Collections";
