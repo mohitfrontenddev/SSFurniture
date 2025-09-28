@@ -32,22 +32,8 @@
 }
 
 
-/* slider code started here  */
-
-.slider-inner .slick-slider {
-  display: flex;
-  align-items: center;
+.swiper-button-prev svg, .swiper-button-next svg {
+   fill: transparent !important;
+   color: #F2F2F2 !important; 
+   min-width: 20px;
 }
-
-.slider-inner .slick-slider .slick-list {
-  width: 100%;
-}
-
-.slider-inner .slick-slider .slick-list .slick-track div {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  text-align: center;
-}
-
