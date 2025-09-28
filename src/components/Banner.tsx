@@ -9,7 +9,7 @@ interface BannerProps {
 }
 
 export function Banner({ title, description }: BannerProps) {
-  const bgImage = "/src/assets/banner.png";
+  const bgImage = "/assets/banner.png";
 
   // Variants for the container and child items
   const container: Variants = {
