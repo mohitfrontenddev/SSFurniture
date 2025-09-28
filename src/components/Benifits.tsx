@@ -86,10 +86,10 @@ export function Benifits() {
                 </div>
               </div>
               <div className="title-wrapper flex flex-col justify-center text-center items-center">
-                <h5 className="text-body-sm text-primary dark:text-text-dark font-semibold">
+                <h5 className="text-body-sm text-dark dark:text-text-dark font-semibold">
                   {item.title}
                 </h5>
-                <p className="text-caption text-primary/80 dark:text-text-dark/80 font-light max-w-[300px]">
+                <p className="text-caption text-dark dark:text-text-dark/80 font-light max-w-[300px]">
                   {item.desc}
                 </p>
               </div>

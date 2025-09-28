@@ -13,13 +13,13 @@ import { LeftArrow } from "../icons/LeftArrow";
 import { RightArrow } from "../icons/RightArrow";
 
 const collectionData = [
-  { title: "Mattress", image: "/src/assets/matteress.jpeg" },
-  { title: "Plastic Chair", image: "/src/assets/plastic-chair-2.jpeg" },
-  { title: "Office Furniture", image: "/src/assets/chair.jpeg" },
-  { title: "Folding Bed", image: "/src/assets/folding-bed.webp" },
-  { title: "Wooden Furniture", image: "/src/assets/sofa.webp" },
-  { title: "Steel Almirah", image: "/src/assets/steel-almirah.webp" },
-  { title: "Dining Table", image: "/src/assets/dining-table.webp" },
+  { title: "Mattress", image: "/assets/matteress.jpeg" },
+  { title: "Plastic Chair", image: "/assets/plastic-chair-2.jpeg" },
+  { title: "Office Furniture", image: "/assets/chair.jpeg" },
+  { title: "Folding Bed", image: "/assets/folding-bed.webp" },
+  { title: "Wooden Furniture", image: "/assets/sofa.webp" },
+  { title: "Steel Almirah", image: "/assets/steel-almirah.webp" },
+  { title: "Dining Table", image: "/assets/dining-table.webp" },
 ];
 
 const containerVariants: Variants = {

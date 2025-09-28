@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 
-import logo from "/src/assets/logo.svg";
+import logo from "/assets/logo.svg";
 import { HamburgerIcon } from "../../icons/HamburgerIcon";
 import { CrossIcon } from "../../icons/CrossIcon";
 import { Button } from "../ui/Button";
@@ -41,7 +41,7 @@ const childVariant: Variants = {
 export function Header() {
   const navigate = useNavigate();
   const [iconToggle, setIconToggle] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
   function toggleBtn() {
     setIconToggle(!iconToggle);
@@ -50,8 +50,8 @@ export function Header() {
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-      if (window.innerWidth >= 768) setIconToggle(false);
+      setIsMobile(window.innerWidth < 1024);
+      if (window.innerWidth >= 1024) setIconToggle(false);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -90,7 +90,7 @@ export function Header() {
           <motion.div variants={childVariant} className="relative">
             <motion.div
               onClick={toggleBtn}
-              className="icon-wrapper w-8 h-8 text-secondary dark:text-text-dark relative md:hidden cursor-pointer z-50"
+              className="icon-wrapper w-8 h-8 text-secondary dark:text-text-dark relative lg:hidden cursor-pointer z-50"
               whileTap={{ scale: 0.9 }}
               animate={{ rotate: iconToggle ? 90 : 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -101,14 +101,14 @@ export function Header() {
             {/* Desktop Nav */}
             {!isMobile && (
               <motion.div
-                className="navigation flex flex-row gap-8 justify-center items-center md:static md:h-auto"
+                className="navigation flex flex-row gap-8 md:gap-4 justify-center items-center md:static md:h-auto"
                 variants={childVariant}
               >
                 {navLinks.map((link, i) => (
                   <motion.span
                     key={i}
                     variants={childVariant}
-                    className="text-heading-xs cursor-pointer text-teritory dark:text-text-dark lg:text-body leading-none font-medium transition-colors duration-300 hover:text-secondary"
+                    className="text-heading-xs md:text-body-sm cursor-pointer text-teritory dark:text-text-dark lg:text-body leading-none font-medium transition-colors duration-300 hover:text-secondary"
                     onClick={() => {
                       if (link.filterKey === "address") {
                         const target = document.getElementById("contact");
@@ -170,7 +170,7 @@ export function Header() {
           {/* Contact Button */}
           <motion.div
             variants={childVariant}
-            className="btn-wrapper gap-4 items-center hidden md:flex"
+            className="btn-wrapper gap-4 items-center hidden lg:flex"
           >
             <Button
               variant="primary"

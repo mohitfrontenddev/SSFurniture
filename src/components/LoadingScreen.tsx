@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import logo from "/src/assets/logo.svg";
+import logo from "/assets/logo.svg";
 export function LoadingScreen({ onFinish }: { onFinish: () => void }) {
   const [percentage, setPercentage] = useState(0);
 

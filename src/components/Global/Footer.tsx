@@ -1,4 +1,4 @@
-import logo from "/src/assets/logo.svg";
+import logo from "/assets/logo.svg";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
